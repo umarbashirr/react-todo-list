@@ -1,0 +1,35 @@
+.listitem {
+  color: #f2f2f2;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listitem.complete {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.listbuttons {
+  display: flex;
+  gap: 0 0.3rem;
+}
+
+.listbuttons button {
+  display: flex;
+  padding: 0.3rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.successbutton {
+  background-color: green;
+  color: #f2f2f2;
+}
+
+.deletebutton {
+  background-color: tomato;
+  color: #f2f2f2;
+}
