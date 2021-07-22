@@ -7,6 +7,17 @@
   padding: 1rem 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .todocard {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 0;
+    height: 100vh;
+    overflow: scroll;
+    padding: 1rem 0;
+  }
+}
+
 .todotitle {
   color: #f2f2f2;
   text-align: center;

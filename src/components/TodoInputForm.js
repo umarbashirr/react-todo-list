@@ -7,15 +7,19 @@ function TodoInputForm({ inputText, setInputText, todos, setTodos }) {
   };
   const formSubmitHandler = (event) => {
     event.preventDefault();
-    setTodos([
-      ...todos,
-      {
-        id: Math.random() * 1000,
-        task: inputText,
-        completed: false,
-      },
-    ]);
-    setInputText('');
+    if (inputText.trim() === '') {
+      alert('Please Fill The Details');
+    } else {
+      setTodos([
+        ...todos,
+        {
+          id: Math.random() * 1000,
+          task: inputText,
+          completed: false,
+        },
+      ]);
+      setInputText('');
+    }
   };
 
   return (
